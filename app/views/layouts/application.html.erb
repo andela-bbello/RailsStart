@@ -8,7 +8,64 @@
 </head>
 <body>
 
+<% if notice %>
+    <p class="notice alert alert-success"><%= notice %></p>
+<%end%>
+<% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+<%end%>
 <%= yield %>
 
 </body>
+<div class="sticky_footer">
+  <section class="transparency col-md-12">
+    <div class="container row text-center">
+      <div class="span4 transparency_badge col-md-2">
+        <a href="#transparency_modal" data-toggle="modal">
+          <%= image_tag('guranteed.png') %>
+        </a>
+      </div>
+      <p class="span20 col-md-10">
+        100% of your donation funds life-changing healthcare; we prove it by being
+        <a href="#transparency_modal" data-toggle="modal">radically transparent</a>.
+      </p>
+    </div>
+  </section>
+  <footer class="standard col-md-12">
+    <div class="row">
+      <ul class="span30">
+        <li>
+          <a href="/view">View Patients</a>
+        </li>
+        <li>
+          <a href="/">Gifts</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/faq">FAQ</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+        <li>
+          <a href="/privacy">Privacy</a>
+        </li>
+        <li>
+          <a href="/terms">TOU</a>
+        </li>
+        <li>
+          <a href="http://watsi.tumblr.com">Blog</a>
+        </li>
+        <li>
+          <a href="/#newsletter_modal" data-toggle="modal">Newsleter</a>
+        </li>
+        <li class="col-lg-offset-1">
+          <a href="/">© 2014 Watsi, a 501(c)3 non-profit</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
 </html>
