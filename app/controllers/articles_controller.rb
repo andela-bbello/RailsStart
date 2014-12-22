@@ -18,9 +18,6 @@ class ArticlesController < ApplicationController
 
   end
 
-  http_basic_authenticate_with name: 'Surge', password: 'abc123',
-                               expect: [:index, :show]
-
   def index
     @articles = Article.all
   end
